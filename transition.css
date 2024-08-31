@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    /* background: #000; */
+    /* border: none; */
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: royalblue;
+    color: aliceblue;
+    transition: 0.75s;
+    box-shadow: 10px 10px 3px  black;
+    /* left,top,blure,spread,color */
+}
+
+button:hover{
+    
+    box-shadow: 5px 5px 5px black,-5px -10px 5px rgb(198, 122, 135);
+    transform-origin: top left;
+    /* transform: translatex(20px); */
+    /* transform: translatey(40px); */
+    /* transform: translate(20px,40px); */
+    /* transform: rotate(30deg); */
+    transform: scale(2);
+    /* scale se zoom in zoom out karte hai */
+    /* transform: skew(50deg); */
+     /*skew dimension ke hisab se move karta hai */
+    background-color: aliceblue;
+    color: royalblue;
+    border:1px solid royalblue;
+}

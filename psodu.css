@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+div h1:first-child{
+    color: rgb(94, 71, 188);
+    font-size: 70px;
+}
+
+div p:last-child{
+    color: rgb(0, 71, 188);
+    font-size: 70px;
+}
+div + button:first-child{
+    color: rgb(98, 74, 44);
+}
+/* parent child/grand/ */
+/* element + sibling */
+/* element, element */
+/* element element */
