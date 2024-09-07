@@ -1,0 +1,46 @@
+
+.slider{
+    display: flex;
+    position: absolute;
+    animation: slide 5s linear infinite both;
+    
+}
+@keyframes slide{
+    from{
+        top: 0;
+        left: 0%;
+    }
+    to{
+     left: -100%;
+    }
+}
+.slider-content h1{
+    font-size: 200px;
+    /* background: #000; */
+    margin-top: 0;
+    padding-top:0px;
+
+}
+.slider-img{
+    margin-top: 40px;
+}
+.slider-img img{
+    width: 150px;
+    height: 145px;
+}
+.slider1{
+    display: flex;
+    position: absolute;
+    animation: move 5s linear  infinite both;
+    /* animation: slide 2s linear infinite both; */
+    
+}
+@keyframes move{
+    from{
+        top: 0%;
+        left:100%;
+    }
+    to{
+     left: 0%;
+    }
+}

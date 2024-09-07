@@ -11,6 +11,11 @@ background-color:  #e4e7df;
 font-family:Arial, Helvetica, sans-serif;
 overflow-x: hidden;
 
+
+}
+
+button:hover{
+    cursor: pointer;
 }
 nav .container{
     width: 100%;
@@ -63,6 +68,7 @@ a:hover{
 .page1{
     display: flex;
     margin-top: 60px;
+    margin-bottom: 300px;
 
 }
 /* .ese{
@@ -85,7 +91,6 @@ a:hover{
 }
 .page1 .left button{
     /* width: 30%; */
-    padding: 0 10px;
     border: none;
     font-size: 20px;
     padding-bottom: 15px;
@@ -108,18 +113,71 @@ a:hover{
 }
 
 
-marquee{
+ /* marquee{
     /* position: absolute; */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 400px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400px; */
     /* background: #8d1d1d; */
-    height: 450px;
+    /* height: 450px;
     margin-top: -85px;
 }
 marquee img{
     width: 240px;
     height: 270px;
+} */ 
+
+.slider{
+    margin-top: 50px;
+    display: flex;
+    position: absolute;
+    animation: slide 8s linear  infinite both;
+  
 }
+@keyframes slide{
+    from{
+        top: 40%;
+        left: 0%;
+    }
+    to{
+     top: 40%;
+     left: -150%;
+    }
+}
+.slider-content h1{
+    font-size: 250px;
+    letter-spacing:-12px;
+    /* background: #000; */
+    margin-top: 0;
+    padding-top:0px;
+
+}
+.slider-img{
+    margin-top: 45px;
+}
+.slider-img img{
+    width: 150px;
+    height: 185px;
+}
+/* .slider1{
+    display: flex;
+    position: absolute; 
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+
+    
+ }
+@keyframes move{
+    from{
+        top: 40%;
+        left:100%;
+    }
+    to{
+        top: 40%;
+     left:-150%;
+    }
+}   */
 
 .full1{
     display: flex;
@@ -169,6 +227,14 @@ marquee img{
 .page3 p{
     color: #80837b;
 }
+ /* .page3 span{
+    background: #000;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* display:flex */
+
+
 .page3 .left h2 :first-child >span{
     height: 50px;
     width: 50px;
@@ -191,3 +257,176 @@ marquee img{
     
     width: 10%;
 }
+
+.page4{
+    background-color:#ffffff ;
+}
+.page4nav{
+    display: flex;    
+    margin: 12px;
+    /* background-color: #fff; */
+}
+.page4child{
+    /* width: 80%; */
+    display: flex;
+    /* justify-content:space-around; */
+     align-items: center;
+
+}
+.page4child :last-child{
+    margin-top: -5px;
+}
+.page4nav h1{
+    padding: 5px 12vh;
+    margin: 5px 15px;
+    margin-left: 2px;
+    padding-right: 280px;
+    font: weight 600px;;
+    font-size: 18px;
+}
+.page4nav .dote{
+        margin-top: 12px;
+        margin-right: -55px;
+        background-color:black;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+
+}
+
+.page4nav button{
+   background-color: transparent;
+   border: none;
+   border-bottom: 2px solid black;
+   font-size: 18px;
+   position: absolute;
+   right: 18px;
+   padding-top: 10px;
+}
+.page4content h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
+    letter-spacing: -25px;
+
+}
+.page4content h1{
+   margin-top: -130px;
+    margin-left: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* width: 80%; */
+    letter-spacing: -42px;
+}
+
+
+.page4content {
+    font-size: 200px;
+
+}
+.page4content video{
+    height: 300px;
+    width: 350px;
+    /* padding: 10px; */
+    margin-left: 30px;
+    margin-bottom: -50px;
+}
+.page4footer{
+    display: flex;
+    margin-left: 12px;
+    /* width: 100%; */
+}
+.page4footer h1{
+    padding-right: 220px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.page4footer button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    position: absolute;
+    right: 18px;
+    padding-top: 10px;
+ }
+
+ @media (max-width:600px){
+    body{
+        font-size: initial;
+        padding: 5px;
+    }
+  
+   .container a{
+    display: none;
+    /* img */
+    
+   }
+   .container .pricing{
+        margin-right: 50vh;
+   }
+   .page1 .right h1{
+    font-size: initial;
+   }
+   .page1{
+    padding-top: 80px;
+    margin-bottom: 50px;
+   }
+  
+  .slider{
+        margin-top:-30vh
+    } 
+   .slider h1{
+    font-size: 90px;
+       letter-spacing:-10px
+   }
+   .slider img{ 
+    height: 75px;
+    width: 50%;
+    margin-top:-30px;
+}
+   .page2 h1{
+        /* width: 100%; */
+        font-size: initial;
+       
+   }
+   .page3{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+   }
+   .page3 .middle{
+    padding-left: 0%;
+    background-color: aquamarine;
+   }
+   /* .page4{
+        background-color: rgb(217, 255, 0);
+        width: 100%;
+       
+   } */
+   .page4nav{
+    margin-left:initial ;
+   }
+   .page4nav h1{
+    padding-right: initial;
+   }
+   .page4child{
+    width: 45%;
+    display:flex ;
+    flex-direction: column;
+   }
+   .page4nav button{
+    margin-right:70px;
+    font-size: initial;
+   }
+   .page4content{
+    margin-top: 100px;
+    /* font-size: small; */
+   }
+   .page4content video{
+    height: 500px;
+    width: 300px;
+    margin-left: -15px;
+   }
+
+   }
+    
